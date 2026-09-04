@@ -1,0 +1,26 @@
+# Haxe
+export/
+bin/
+.haxelib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+*.o
+*.obj
+*.so
+*.dylib
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]

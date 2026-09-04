@@ -57,20 +57,23 @@ class GameState extends FlxState
 	{
 		super.update(elapsed);
 		
-		// Simple arrow key input
-		if (FlxG.keys.justPressed.LEFT)
+		// LEFT: Arrow Left or A
+		if (FlxG.keys.justPressed.LEFT || FlxG.keys.justPressed.A)
 		{
 			onNoteHit();
 		}
-		else if (FlxG.keys.justPressed.DOWN)
+		// DOWN: Arrow Down or S
+		else if (FlxG.keys.justPressed.DOWN || FlxG.keys.justPressed.S)
 		{
 			onNoteHit();
 		}
-		else if (FlxG.keys.justPressed.RIGHT)
+		// RIGHT: Arrow Right or D
+		else if (FlxG.keys.justPressed.RIGHT || FlxG.keys.justPressed.D)
 		{
 			onNoteHit();
 		}
-		else if (FlxG.keys.justPressed.UP)
+		// UP: Arrow Up or W
+		else if (FlxG.keys.justPressed.UP || FlxG.keys.justPressed.W)
 		{
 			onNoteHit();
 		}

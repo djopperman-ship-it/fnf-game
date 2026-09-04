@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- _________________________ Application Settings _________________________ -->
+
+	<app title="Friday Night Funkin" file="FNF" main="Main" version="0.2.7" company="ninjamuffin99" />
+
+	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
+		or you can set the actual size of your file manually at "FlixelGame.hx" -->
+	<!-- <app preloader="Preloader" resizable="true" /> -->
+	<app preloader="flixel.system.FlixelPreloader" resizable="true" />
+
+	<!-- Should the output be run in fullscreen mode? Only used if NEW compile target is used. -->
+	<define name="fullscreen" value="false" />
+
+	<!-- Settings if you want to flip the tile sheet? (Tiling is on by default) -->
+	<!-- <define name="NO_TILE_PRESET" /> -->
+
+	<!-- The URL of the swf file to preload. Only used in Flash preprocessor. -->
+	<!-- <app preloader="flixel/system/FlixelPreloader.swf" /> -->
+
+	<!-- Determines if the installed swf file should be run when testing project "--update" does not compile Flash export! -->
+	<!-- <app launch_url="bin/FNF.swf" /> -->
+
+	<!-- Path to the icon displayed for the app (New only) Use this to replace the default one in your operator system. -->
+	<!-- <icon path="icon.ico" /> -->
+
+	<!-- Minimum & Maximum version of Haxe to build -->
+	<set name="haxe" value="4.2.5" />
+
+	<!-- ______________________________ Libraries _______________________________ -->
+
+	<!-- In case you want to benfit from cleaner haxe sublimetext files written by the 'vim' user
+		set below value to 1 -->
+	<!-- <set name="sublimetext" value="1" /> -->
+	<!-- <haxelib name="tweenxcore" /> -->
+	<haxelib name="flixel" />
+	<haxelib name="openfl" />
+	<haxelib name="lime" />
+
+	<!-- <haxelib name="runloop" /> -->
+
+	<!-- ______________________________ Directories _______________________________ -->
+
+	<!-- Don't ever change these unless you know what you're doing! -->
+	<classpath name="source" />
+	<assets path="assets" rename="assets" />
+
+	<!-- _______________________________ Running _________________________________ -->
+
+	<!-- Benchmark info, opt in only. Set this to get all the same info as target flash displays in compiler output-->
+	<!-- <verbose name="haxe" /> -->
+
+	<!-- Profiler / Debugging -->
+	<!-- <debug addr="localhost" port="6972" /> -->
+
+	<!-- Optimized / Profiling build-->
+	<!-- <haxedef name="analyzer-optimize" /> -->
+	<!-- <haxedef name="dump=pretty" /> -->
+
+	<!-- Build in Neko, so to speed up tests -->
+	<!-- <set name="neko_compile_cache" value="1" /> -->
+
+	<!-- _________________________________ Defines _______________________________ -->
+
+	<!--Custom defines to use-->
+	<define name="PRELOAD_ALL" value="1" />
+	<define name="MACRO" value="1" if="html5" />
+
+	<!-- _________________________________ Custom _______________________________ -->
+	<!--Place custom nodes like configs here-->
+
+</project>
